@@ -12,8 +12,6 @@ function hashPW(pwd){
 
 exports.signup = function(req,res){
     var user = new User({username:req.body.username});
-    console.log("Hi ! " + user.username);
-    console.log("req.body = " + req.body);
     user.set('hashed_password',hashPW(req.body.password));
     user.set('email',req.body.email);
     user.save(function(err){

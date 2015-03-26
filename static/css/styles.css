@@ -17,7 +17,7 @@ form{
     margin:10px;
 }
 
-label{width:80px display:inline-block;}
+label{width:80px; display:inline-block;}
 
 input{
     border:3px ridge blue;
